@@ -28,7 +28,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 ol, ul {
 	list-style: none;
@@ -48,11 +50,11 @@ table {
 header{
     background:white;
     height:100px;
+	margin: 10px;
 }
 .header_title{
 	display: block;
 	text-align: center;
-    margin:auto;
     font-size:80px;
     color:green;
 	font-family: 'BMJUA';
@@ -62,12 +64,14 @@ input{
 	text-align: center;
 	color:black;
 	border-radius: 10px;
-	
+	width: 600px;
+	height: 25px;
 }
-button{
-	margin: 0;
+
+.Button{
 	cursor: pointer;
-	width: auto;
+	width: 50px;
+	height: 25px;
 	font-family: 'BMJUA';
 	text-align:center;
 	-webkit-appearance: none;
@@ -77,19 +81,51 @@ button{
 	color:green;
 	background-color: white;
 	transition-duration: 0.3s;
-
+	margin-bottom: 10px;
 }
-a{
+.Button:hover{
+	background-color: gray;
+}
+a,li{
     text-decoration: none;
+	color:white;
 }
-
-section{
-	box-shadow: 5px;
-	margin-top: 40px;
-	background-color: whitesmoke;
-	width: 100%;
-	height: 60px;
+.Nav{
+	margin-top:10px;
+	width: 1200px;
+	background-color: green;
+	height: 40px;
+	border-radius: 10px;
+}
+.Navli{
 	display: inline-flex;
+	margin-left: 80px;
+	margin-right: 50px;
+	padding: 10px;
+	color:white;
+	font-family: 'BMJUA';
+	font-size: large;
+}
+.drop_the_text{
+	background-image: url('search.png');
+	background-size: 20px;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+main{
+	width: 1200px;
+	height: 500px;
+	margin-top: 75px;
+	border:5px solid green;
+	border-radius: 20px;
+}
+.Time{
+	text-align: center;
+	font-family: 'BMJUA';
+	background-color: antiquewhite;
+	width: 1300px;
+	height: 1500px;
+	font-size:100px;
 }
 
 
